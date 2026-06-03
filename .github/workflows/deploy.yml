@@ -33,9 +33,14 @@ jobs:
 
       - name: Build Next.js
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /proindra_portfolio
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
+
+      - name: List out directory
+        run: ls -la out/ | head -20
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
