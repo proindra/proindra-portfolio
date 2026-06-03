@@ -34,7 +34,7 @@ jobs:
       - name: Build Next.js
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /proindra_portfolio
+          NEXT_PUBLIC_DEPLOY_URL: "true"
 
       - name: Create .nojekyll file
         run: touch out/.nojekyll
