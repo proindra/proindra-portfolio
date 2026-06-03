@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/proindra_portfolio",
+  basePath: process.env.NODE_ENV === "production" ? "/proindra_portfolio" : "",
   output: "export",
   images: {
     remotePatterns: [

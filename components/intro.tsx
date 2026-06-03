@@ -36,7 +36,7 @@ export default function Intro() {
             {/*dp  */}
             <Image
             // .. when in github 
-               src="/proindra_portfolio/sus.png"
+               src="/sus.png"
               alt="Portfolio profile"
               width="192"
               height="192"
